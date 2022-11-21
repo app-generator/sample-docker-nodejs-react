@@ -33,7 +33,8 @@ $ docker-compose up --build
 > 👉 **Step 3** - `Migrate DB`
 
 ```bash
-$ docker-compose run --rm node-server yarn typeorm migration:run
+$ docker-compose run --rm node-server npm run typeorm migration:generate -n your_migration_name
+$ docker-compose run --rm node-server npm run typeorm migration:run
 ```
 
 <br />
